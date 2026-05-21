@@ -573,68 +573,68 @@
 <aside id="sidebar">
   <div class="sidebar-section">
     <div class="sidebar-label">Getting Started</div>
-    <a class="sidebar-link active" onclick="scrollTo('intro')">
+    <a class="sidebar-link active" onclick="event.preventDefault();navTo('intro')" href="#">
       <span class="dot"></span> Introduction
     </a>
-    <a class="sidebar-link" onclick="scrollTo('install')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('install')" href="#">
       <span class="dot"></span> Installation
     </a>
-    <a class="sidebar-link" onclick="scrollTo('quickstart')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('quickstart')" href="#">
       <span class="dot"></span> Quick Start
     </a>
   </div>
 
   <div class="sidebar-section">
     <div class="sidebar-label">Core Concepts</div>
-    <a class="sidebar-link" onclick="scrollTo('series')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('series')" href="#">
       <span class="dot"></span> Series
     </a>
-    <a class="sidebar-link" onclick="scrollTo('dataframe')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('dataframe')" href="#">
       <span class="dot"></span> DataFrame
     </a>
-    <a class="sidebar-link" onclick="scrollTo('index')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('index')" href="#">
       <span class="dot"></span> Index Objects
     </a>
   </div>
 
   <div class="sidebar-section">
     <div class="sidebar-label">Data Operations</div>
-    <a class="sidebar-link" onclick="scrollTo('io')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('io')" href="#">
       <span class="dot"></span> I/O Tools
     </a>
-    <a class="sidebar-link" onclick="scrollTo('selection')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('selection')" href="#">
       <span class="dot"></span> Indexing & Selection
     </a>
-    <a class="sidebar-link" onclick="scrollTo('cleaning')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('cleaning')" href="#">
       <span class="dot"></span> Data Cleaning
     </a>
-    <a class="sidebar-link" onclick="scrollTo('groupby')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('groupby')" href="#">
       <span class="dot"></span> GroupBy
     </a>
-    <a class="sidebar-link" onclick="scrollTo('merge')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('merge')" href="#">
       <span class="dot"></span> Merge & Join
     </a>
-    <a class="sidebar-link" onclick="scrollTo('reshape')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('reshape')" href="#">
       <span class="dot"></span> Reshape
     </a>
   </div>
 
   <div class="sidebar-section">
     <div class="sidebar-label">Analytics</div>
-    <a class="sidebar-link" onclick="scrollTo('stats')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('stats')" href="#">
       <span class="dot"></span> Statistics
     </a>
-    <a class="sidebar-link" onclick="scrollTo('viz')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('viz')" href="#">
       <span class="dot"></span> Visualization
     </a>
-    <a class="sidebar-link" onclick="scrollTo('timeseries')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('timeseries')" href="#">
       <span class="dot"></span> Time Series
     </a>
   </div>
 
   <div class="sidebar-section">
     <div class="sidebar-label">Reference</div>
-    <a class="sidebar-link" onclick="scrollTo('methods')">
+    <a class="sidebar-link" onclick="event.preventDefault();navTo('methods')" href="#">
       <span class="dot"></span> Method Reference
     </a>
   </div>
@@ -1368,19 +1368,19 @@ df <span class="op">=</span> df.<span class="f">tz_convert</span>(<span class="s
 <!-- TOC PANEL -->
 <div class="toc-panel">
   <div class="toc-title">On this page</div>
-  <a class="toc-link active" onclick="scrollTo('intro')">Introduction</a>
-  <a class="toc-link" onclick="scrollTo('install')">Installation</a>
-  <a class="toc-link" onclick="scrollTo('quickstart')">Quick Start</a>
-  <a class="toc-link" onclick="scrollTo('series')">Series</a>
-  <a class="toc-link" onclick="scrollTo('dataframe')">DataFrame</a>
-  <a class="toc-link" onclick="scrollTo('io')">I/O Tools</a>
-  <a class="toc-link" onclick="scrollTo('selection')">Indexing</a>
-  <a class="toc-link" onclick="scrollTo('cleaning')">Cleaning</a>
-  <a class="toc-link" onclick="scrollTo('groupby')">GroupBy</a>
-  <a class="toc-link" onclick="scrollTo('merge')">Merge</a>
-  <a class="toc-link" onclick="scrollTo('stats')">Statistics</a>
-  <a class="toc-link" onclick="scrollTo('timeseries')">Time Series</a>
-  <a class="toc-link" onclick="scrollTo('methods')">Reference</a>
+  <a class="toc-link active" onclick="event.preventDefault();navTo('intro')" href="#">Introduction</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('install')" href="#">Installation</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('quickstart')" href="#">Quick Start</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('series')" href="#">Series</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('dataframe')" href="#">DataFrame</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('io')" href="#">I/O Tools</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('selection')" href="#">Indexing</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('cleaning')" href="#">Cleaning</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('groupby')" href="#">GroupBy</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('merge')" href="#">Merge</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('stats')" href="#">Statistics</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('timeseries')" href="#">Time Series</a>
+  <a class="toc-link" onclick="event.preventDefault();navTo('methods')" href="#">Reference</a>
 </div>
 
 </div><!-- end .layout -->
@@ -1400,24 +1400,25 @@ df <span class="op">=</span> df.<span class="f">tz_convert</span>(<span class="s
 
 <script>
   // ── Smooth scroll to section ──
-  function scrollTo(id) {
+  function navTo(id) {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 72;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
     updateActive(id);
   }
 
   function updateActive(id) {
-    // Sidebar
     document.querySelectorAll('#sidebar .sidebar-link').forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('onclick') && link.getAttribute('onclick').includes(`'${id}'`)) {
+      if ((link.getAttribute('onclick') || '').includes(`'${id}'`)) {
         link.classList.add('active');
       }
     });
-    // TOC
     document.querySelectorAll('.toc-link').forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('onclick') && link.getAttribute('onclick').includes(`'${id}'`)) {
+      if ((link.getAttribute('onclick') || '').includes(`'${id}'`)) {
         link.classList.add('active');
       }
     });
@@ -1427,7 +1428,7 @@ df <span class="op">=</span> df.<span class="f">tz_convert</span>(<span class="s
   const sections = document.querySelectorAll('.doc-section[id]');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) updateActive(entry.target.id);
+      if (entry.isIntersecting) updateActive(entry.target.id); // observer only updates highlight, no scroll
     });
   }, { rootMargin: '-20% 0px -70% 0px' });
   sections.forEach(s => observer.observe(s));
@@ -1468,10 +1469,10 @@ df <span class="op">=</span> df.<span class="f">tz_convert</span>(<span class="s
       const query = searchInput.value.trim().toLowerCase();
       // Simple: scroll to first section whose text matches
       if (query.length < 3) return;
-      const sections = document.querySelectorAll('.doc-section');
+      const sections = document.querySelectorAll('.doc-section[id]');
       for (const s of sections) {
         if (s.textContent.toLowerCase().includes(query)) {
-          s.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          navTo(s.id);
           break;
         }
       }
